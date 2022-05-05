@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Object o = new Scanner(System.in);
+ /*       Object o = new Scanner(System.in);
 
 
 
@@ -16,11 +16,26 @@ public class Main {
             scanner.nextInt();
         }
 
-        /*((String) o ).length();*/
+        *//*((String) o ).length();*//*
 
         Object o1 = new String();
 
         Object o2 = new Integer(15);
+*/
+
+
+        Object[] objects = {10, "Привет", 3.14}; // здесь происходит автоупаковка
+
+        for(Object o : objects) {
+            if(o instanceof String){
+                String s = (String) o;
+                System.out.println(s);
+
+            }
+
+        }
+
+
 
     }
 }

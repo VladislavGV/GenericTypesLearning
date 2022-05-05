@@ -1,4 +1,5 @@
 import javax.management.ObjectName;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -35,6 +36,18 @@ public class Main {
 
         }
 
+        ArrayList numbers = new ArrayList(); // Сохраняет Object\
+
+        for(int i = 0; i < 10; i++){ //сохранять коллекцию числа 10, 20 .. 100
+            numbers.add(i*10);
+//            numbers.add(i*10.f);
+        }
+
+        int sum = 0;
+        for(Object o : numbers){
+            sum = sum + (Integer) o;
+        }
+        System.out.println(sum);
 
 
     }

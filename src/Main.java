@@ -8,8 +8,15 @@ public class Main {
 
 
 
-        System.out.println(o instanceof Scanner);
-        ((String) o ).length();
+
+        Scanner scanner = null;
+        if(o instanceof Scanner) scanner = (Scanner) o;
+
+        if(scanner != null); {
+            scanner.nextInt();
+        }
+
+        /*((String) o ).length();*/
 
         Object o1 = new String();
 
